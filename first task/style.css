@@ -1,0 +1,14 @@
+/* KJSYDFCDS
+DSAFDSAFDSAFS
+ASDFDSAF */
+
+#el::before {
+    position:absolute;
+    content:'';
+    width:590px;
+    height:2px;
+    top:5px;
+    left:5px;
+    background-color: rgba(139, 132, 132, 0.301);
+    
+}

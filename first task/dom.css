@@ -1,0 +1,42 @@
+h3{
+    font-size:30px;
+    font-weight:700;
+    color:red;
+    margin: 20px auto;
+}
+p{
+    font-size:15px;
+    color:royalblue;
+    margin: 20px auto;
+}
+#btn{
+    width: 50px;
+    height: 30px;
+}
+
+.results{
+    width:100%;
+    background-color:white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+
+.results div{
+    background-color: red;
+    color:black;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding: 20px 0  20px 0;
+    text-align: center;
+    align-items: center;
+}
+input[type="submit"] {
+background-color: aqua;
+display: block;
+margin: 30px auto;
+width: 100px;
+height:40px;
+}

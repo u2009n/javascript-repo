@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experment</title>
+</head>
+<body>
+    <script>
+            
+    console.log('Elzero \\web \'school\'');
+    console.log("Elzero \nweb \nschool");
+    let a='we love ';
+    let b='javascript';
+    let c='and';
+    let d='progrmamming';
+    document.writeln(a+b);
+    console.log(a + ' ' + b + '\n ' + c + ' ' + d);
+    console.log(`${a} "" '' \\${b}
+    ${c} ${10*100}`);
+
+
+ let titleName='Elzero',descName='Elzero Web School',dateName='25/10';
+
+    let markup=`
+    <div class='card'>
+     <h3>Hello ${titleName}</h3>
+     <p>${descName}</p>
+     <span>${dateName}</span>
+    </div>`;
+ 
+document.write(markup.repeat(4));
+console.log(typeof NaN);
+console.log(2 **4);
+console.log(11%2);
+console.log(+100);
+console.log(+"100");
+console.log(+ true);
+console.log(-100);
+console.log(Number('100'));
+console.log(Number('ADEL'));
+
+one='10';
+two=20;
+three=true;
+console.log(+one+two);
+console.log(one+two+three);
+console.log(+one+two+three);
+console.log('------------------');
+
+let num1=10;
+let num2='20';
+let num3=80;
+console.log(++num1 + +num2++ + +num3++ - +num1++);
+console.log(++num1 + -num2++ + +num3++ - -num1++ + +num1);
+
+console.log('--------------');
+console.log(1e6);
+console.log(10**6);
+console.log(1_000_000);
+console.log(Number.MIN_SAFE_INTEGER);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MAX_VALUE);
+console.log(100.10.toString());
+console.log(100.35.toFixed(3));
+console.log(Number("100 adel"));
+console.log(+'100 adel');
+console.log(parseInt('100 adel'));
+console.log(parseFloat('100.5050 adel'));
+console.log(Number.isInteger(100));
+console.log(Number.isInteger('100'));
+console.log(Number.isNaN(100));
+console.log(Number.isNaN('100'));
+console.log(Math.round(99.2));
+console.log(Math.round(99.5));
+console.log(Math.ceil(99.2));
+console.log(Math.floor(99.2));
+console.log(Math.random());
+console.log(Math.min(99.2,-10,33));
+console.log(Math.max(99.2,34,-100));
+console.log(Math.trunc(99.2));
+// change
+console.log('_________________________________')
+aa=1_00;
+bb=2_00.5;
+cc=1e2;
+dd=2.4;
+console.log(parseInt(Math.min(aa,bb,cc,dd)));
+console.log(aa ** Math.round(dd) );
+console.log(Math.round(dd));
+console.log(Math.trunc(dd));
+console.log(Math.floor(dd));
+console.log(parseInt(dd));
+console.log('-----------------------');
+console.log((bb+dd).toString());
+
+// challang
+let school='Elzero Web   School';
+console.log(school.charAt(2).toUpperCase() + school.slice(3,6));
+console.log(school.charAt(13).toUpperCase().repeat(8));
+console.log(`\[${school.substr(0,6)}\]`);
+console.log(`${school.substr(0,6)} ${school.substr(-6,6)}`);
+console.log(`${school.substring(0,1).toLowerCase()}${school.substring(1,school.length-1).toUpperCase()}${school.substring(school.length-1).toLowerCase()}`);
+console.log(10!=="10");
+console.log(!(10==9) && 1 > 2);
+
+let thegender='Male';
+let theName='Adel';
+let theage='43';
+console.log(`THESLICE${thegender.slice(2,1)}`);
+let theresult=thegender==='Male'?'Mr':'Ms';
+document.write(theresult);
+document.write(`Hallo ${theresult} ${theName}`)
+console.log(`Hallo ${theresult} ${theName}`);
+
+theage<20 ?console.log(20)
+:theage > 20 && theage < 43 
+?console.log('von 20 bis 43')
+:theage > 43 
+?console.log('large')
+:console.log('unkownown');
+
+console.log('if statement')
+if (theage<20){
+    console.log(20);
+   }else if (theage > 20 && theage < 43){ 
+    console.log('von 20 bis 43');
+  }
+   else if (theage > 43){ 
+   console.log('large');
+   }
+   else {
+       console.log('unkownown');
+   };
+
+   let job='Devloper';
+   let salery=0;
+
+   switch(job) {
+       case 'Manger':
+             salery=8000;
+             console.log(salery);
+             break;
+       case 'IT':
+       case 'support':
+            salery=6000;
+            console.log(salery);  
+            break;
+       case 'Devloper':
+       case 'Designer':
+             salery=7000;
+             console.log(salery);
+             break;
+       default:
+           salery=4000;
+           console.log(salery);  
+           break;             
+   }
+
+   let myarry=['adel','ahmed','ali',['sami','hajer']];
+
+   console.log(myarry[3][1][2]);
+   myarry[2]='sameh';
+   console.log(myarry);
+   console.log(Array.isArray(myarry));
+   console.log(myarry.length);
+   myarry[myarry.length - 1 ]='gasem';
+   console.log(myarry);
+   myarry.unshift('nasser');
+   console.log(myarry);
+   myarry.push('Eman');
+   console.log(myarry);
+   let frist=myarry.shift();
+   console.log(frist);
+   let last=myarry.pop();
+   console.log(last);
+   console.log(myarry);
+   myarry.push('ahmed');
+   console.log(myarry);
+   console.log(myarry.indexOf('ahmed',2));
+   console.log(myarry.lastIndexOf('ahmed',-1));
+   console.log(myarry.includes('sami',2));
+   let myList=['adel',10,'20','sami',1000,30,-100,'kamal'];
+   console.log(myList);
+   console.log(myList.sort());
+   console.log(myList.reverse());
+   console.log(myList.sort().reverse());
+   console.log(myarry);
+   console.log(myarry.slice(1));
+   console.log(myarry.splice(-2,1));
+   console.log(myarry);
+   console.log(myarry.splice(0,0,'njwa','kareem'));
+   console.log(myarry);
+   console.log(myarry.splice(1,1,'khaled'));
+   console.log(myarry);
+   let mynewfrineds=['ali','ahmed','samer'];
+   let mynewSchoolfrineds=['thamer','sami','nur'];
+   let myaltfrineds=['fath','saleh','noof'];
+
+   let allFrindes=myaltfrineds.concat(mynewfrineds,mynewSchoolfrineds,'shoog',[1,2]);
+   console.log(allFrindes);
+   console.log(allFrindes.join('  and ').toUpperCase());
+
+    // Array Chalang
+
+    let zero=0;
+    let counter=3;
+    let my=['ahmed','Mazero','Elham','Osamah','Gmal','Amer'];
+    console.log(my.splice(0,4).reverse());
+
+  let student=[1,2,'adel','ali','Elham','nasser','Gmal','Amer'];
+  let onlyName=[];
+
+    for(let i=0 ; i < student.length; i++){
+        if(typeof student[i]==='string'){
+            onlyName.push(student[i]);
+        }
+        console.log(student[i]);
+    }
+    for (let j=0;j < onlyName.length;j++){
+        console.log(onlyName[j]);
+    }
+    console.log(onlyName);
+
+    let product=['Keyboard','Mouse','Monitor','pen'];
+    let color=['Red','Green','Yellow','Blue'];
+
+    // for(let i=0; i< product.length ;i++) {
+    //     if (typeof product[i]==='number') {
+    //         continue;
+    //     }
+    //     console.log(product[i]);
+    // }
+
+    console.log('##############################################');
+    mainLoop:for(let i=0; i< product.length ;i++){
+        console.log(`#${product[i]}`);
+        nestedLoop:for(let j=0;j<color.length;j++){
+            if(color[j]==='Yellow'){
+                break mainLoop;
+            }
+            console.log(`-${color[j]}`);
+        }   
+    }
+
+    // let k=4;
+    // for(;;){
+    //     console.log(product[k]);
+    //     K+=1;
+    //     if(k===product.length)break;
+    // }
+  let showcount=5;
+    document.write(`<h1>Show ${showcount} product</h1>`)
+    for(i=0;i< product.length;i++){
+        document.write(`<h3>[${i+1}] ${product[i]}</h3>`);
+        for(j=0;j< color.length;j++){
+            document.write(`<p>${color[j]}</p>`);
+        }
+    }
+
+    console.log('----------------------------------------------');
+    let index=0;
+    while(index < product.length){
+        console.log(product[index]);
+        index+=1;
+    }
+
+    console.log('++++++++++++++++++++++++++++++++++++++');
+    let h=0;
+    do{
+        console.log(product[h]);
+        h++;
+    } while(h < product.length);
+
+    let myAdmin=['Ahmed','Osamah','Syead','Stop','Sami'];
+    let myEmployee=['Amagd','Sameh','Ameer','Omer','Othman','Amani','Samia','Anur'];
+    document.write('####################################################');
+    document.write(`<div> We Have X Admin </div>`);
+     for(let i=0;i < myAdmin.length;i++){
+         if(myAdmin[i]==='Stop'){
+         document.write(`<div> We Have ${i} Admin`);
+         break;
+         }
+     }
+   document.write(`<HR>`);
+     for(let i=0;i < myAdmin.length;i++){
+         if(myAdmin[i]==='Stop'){
+             break;}
+         document.write(`<div>The Admin for Team ${i+1} Is ${myAdmin[i]}`);
+            document.write(`<h3> Team Member:</h3>`);  
+            for(let j=0;j < myEmployee.length;j++){
+                if(myAdmin[i][0]=== myEmployee[j][0]) {
+                   document.write(`<div> ${j+1} - ${myEmployee[j]} </div>`);
+                   }   
+            }    
+            document.write(`<HR>`); 
+    }
+
+    let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+    let index1 = 0;
+    let counter1 = 0;
+
+    // Output
+    "1 => Sayed"
+    "2 => Mahmoud"
+    console.log('#######################################');
+    while(index1 < friends.length) {
+        if(friends[index1][counter1]==='S' || friends[index1][counter1]==='M' ){
+            console.log(friends[index1]);
+        }
+        index1++;
+    }
+
+
+    function generat(start,end){
+        for(let i=start;i < end;i++){
+            console.log(i);
+            if(i===15){
+                return 'ok';
+            }
+        }
+    }
+        generat(10,20);   
+
+        console.log('#######################################');
+      
+        function generat(...number){
+        let result=0;
+        for(let i=0;i < number.length;i++){
+            result+= number[i];
+        }
+        return `the final ${result}` ;
+       }
+       console.log(generat(10,20,30,42,100,321,1000));   
+
+
+       function showinf(na='Un',age='Un',art=0,show='',...sk) {
+           document.write(`<div>`);
+           document.write(`<h2>Welcom ${na}</h2>`);
+           document.write(`<P> ${age}</P>`);
+           document.write(`<P> $${art}</P>`);
+           if (show ==='Yes') {
+               if (sk.length > 0) {
+                document.write(`<P> ${sk.join('|')}</P>`);
+               } else {
+                   document.write('no skills');
+               }
+           } else {
+               document.write('no show');
+           }
+           document.write(`</div>`);
+        }
+        showinf('adel',43,10,'No','html','css');
+
+        function showdetials(a,b,c){
+            if(a==='Osama' && b===38 && c===true){
+              console.log(`Hallo ${a},and your age is ${b},you are avilabel for hier`);
+            }else if (a===38 &&  b==='Osama' && c===true){
+                console.log(`Hallo ${b},and your age is ${a},you are avilabel for hier`)
+            }else if ( a===false &&  b==='Osama' &&  c===38){
+                console.log(`Hallo ${b},and your age is ${c},you are Not avilabel for hier`)
+            }
+        }
+        showdetials('Osama',38,true);
+        showdetials(false,'Osama',38);
+
+   </script>
+</body>
+</html>

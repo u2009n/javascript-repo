@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fourteen</title>
+</head>
+
+<body>
+    <script>
+    let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+    let letters=mix.map(function(ele){
+        return isNaN(parseInt(ele))?ele:'';
+   
+    }).reduce(function(acc,current){
+        return acc+current;
+    });
+    console.log(letters);
+
+    let myString = "EElllzzzzzzzeroo";
+    let stringArry=myString.split("").filter(function(ele,index,arr){
+       
+        return arr.indexOf(ele)===index ;
+    
+    
+    }).reduce(function(acc,next){
+        return acc+next;
+    });
+    console.log(stringArry);
+
+    let myArray = ["E", "l", "z", ["e", "r"], "o"];
+    let neuArry=myArray.reduce(function(acc,next){
+        return acc!=='[' && acc!==']' ?acc+next:'';
+    });
+    console.log(neuArry);
+
+    let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+    let onlyNumbers=numsAndStrings.filter(function(ele){
+        return parseInt(ele);
+    }).map(function(ele){
+        return -ele;
+    })
+    console.log(onlyNumbers);
+
+
+    let nums = [2, 12, 11, 5, 10, 1, 99];
+
+    let sum=nums.reduce(function(acc,current){
+        console.log(acc);
+        return (current % 2 === 0) ?acc + current:acc * current;
+
+    },1);
+     console.log(sum);
+    </script>
+</body>
+</html>

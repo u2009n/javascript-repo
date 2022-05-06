@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+        // let nationalty='country';
+        // let user={
+        //     // Peroperties
+        //     theName:'Adel',
+        //     theAge:43,
+        //     'addresse of':'Rönner weg 4',
+        //     country:'jemen',
+        //     // Methode
+        //     sayHallo:function(){
+        //         return 'Hello';
+        //     }
+        // };
+        // console.log(user.theName);
+        // console.log(user.theAge);
+        // console.log(user['addresse of']);
+        // console.log(user[nationalty]);
+        // console.log(user.sayHallo());
+
+        let nationalty='country';
+        let user={
+            // Peroperties
+            theName:'Adel',
+            theAge:43,
+            avilabel:false,
+            skills:['html','css','js'],
+            addresse:{
+                jemen:'Sanaa',
+                germany:{
+                    one:'kiel',
+                    two:'Raisdorf',
+
+                },
+            },
+            // Methode
+            checav:function(){
+                if(user.avilbel===false){
+                    return 'Free for work';
+                }else{
+                 return 'Not Free';
+               }
+         } 
+        };
+        console.log(user.theName);
+        console.log(user.theAge);
+        console.log(user.skills);
+        console.log(user.skills.join('-'));
+        console.log(user.skills[2]);
+        console.log(user.addresse);
+        console.log(user.addresse.jemen);
+        console.log(user.addresse.germany);
+        console.log(user.addresse.germany.two);
+        console.log(user.checav());
+
+        console.log('##########################################');
+
+        let user1={
+          age:40,
+        };
+        
+        console.log(user1);
+        user1.name='ADEL';
+        user1.age=42;
+
+        console.log(user1.name);
+        console.log(user1.age);
+
+        console.log('##########################################');
+
+        let obj = new Object({
+        age:50,
+        });
+
+        console.log(obj);
+        obj.name='ADEL';
+        obj.age=30;
+        obj.doubolage=function(){
+            return this.age * 2;
+        }
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.doubolage());
+
+        console.log('##########################################');
+
+
+        let copyObj=Object.create(obj);
+        copyObj.age=50;
+        console.log(copyObj.name);
+        console.log(copyObj.age);
+        console.log(copyObj.doubolage());
+
+        console.log('##########################################');
+
+        let stud1 = {
+            prob1:1,
+            mehtod1:function(){
+                return this.prob1;
+            },
+        }
+
+        let stud2={
+            prob2:2,
+            mehtod1:function(){
+                return this.prob2;
+            },
+        };
+
+        let targezobject={
+            prob1:3,
+            mehtod1:function(){
+                return this.prob1;
+            },
+        };
+
+            let finalobject= Object.assign(targezobject,stud1,stud2);
+                finalobject.a=1000;
+               console.log(finalobject);
+
+            console.log('##########################################');
+
+            let newObject=Object.assign({},stud2,{prob1:100});
+            console.log(newObject);
+    </script>
+
+
+</body>
+<button id='cl'>click</button>
+<script>
+    document.getElementById('cl').onclick=function(){
+        console.log(this);
+    }
+
+    // Create Your Object Here
+    let member= new Object({
+       name:'adel',
+       age:43,
+       country:'jemen',
+       fullDetails:function(){
+       return (`My Name Is ${this.name},My Age Is ${this.age} I live in ${this.country}`);
+       }
+    });
+    console.log(member.name); // Elzero
+    console.log(member.age); // 38
+    console.log(member.country); // Egypt
+    console.log(member.fullDetails());
+    // My Name Is Elzero, My Age Is 38, I Live in Egypt
+
+    console.log('##########################################');
+
+
+    let a = 1;
+
+    let threeNums = {
+    b: 2,
+    c: 3,
+    d: 4,
+    };
+
+    let twoNums = {
+    e: 5,
+    f: 6,
+    };
+
+    // Create Your Object Here in One Line
+    let finalObject=Object.assign({a:1},threeNums,twoNums)
+
+    console.log(finalObject);
+
+    /*
+    a: 1
+    b: 2
+    c: 3
+    d: 4
+    e: 5
+    f: 6
+    */
+
+    console.log('###################### SPIEL ####################');
+
+        // The Object To Work With
+        let firstspiel='Trinity Universe';
+
+        let myFavGames = {
+        "Trinity Universe": {
+            publisher: "NIS America",
+            price: 40,
+        },
+        "Titan Quest": {
+            publisher: "THQ",
+            bestThree: {
+            one: "Immortal Throne",
+            two: "Ragnarök",
+            three: "Atlantis",
+            },
+            price: 50,
+        },
+        YS: {
+            publisher: "Falcom",
+            bestThree: {
+            one: "Oath in Felghana",
+            two: "Ark Of Napishtim",
+            three: "origin",
+            },
+            price: 40,
+        },
+        };
+
+        // Code One => How To Get Object Length ?
+        let objectLength = Object.keys(myFavGames).length;
+
+        for (let i=0; i < myFavGames.length; i++) {
+        console.log(`The Game Name Is ${myFavGames[i]}`);
+        console.log(`The Publisher Is ${myFavGames.publisher}`);
+        console.log(`The Price Is ${myFavGames['Trinity Universe'].price}`);
+
+        // // Check If Nested Object Has Property (bestThree)
+        if (Object.keys(myFavGames.hasOwnProperty('bestThree'))) {
+             console.log("- Game Has Releases");
+             console.log(`First => ${myFavGames.YS.bestThree.one}`);
+             console.log(`Second => ???????`);
+             console.log(`Third => ???????`);
+         }
+         console.log("#".repeat(20));
+         }
+
+        // Ouput
+
+        "The Game Name Is Trinity Universe"
+        "The Publisher Is NIS America"
+        "The Price Is 40"
+        "####################"
+        "The Game Name Is Titan Quest"
+        "The Publisher Is THQ"
+        "The Price Is 50"
+        "- Game Has Releases"
+        "First => Immortal Throne"
+        "Second => Ragnarök"
+        "Third => Atlantis"
+        "####################"
+        "The Game Name Is YS"
+        "The Publisher Is Falcom"
+        "The Price Is 40"
+        "- Game Has Releases"
+        "First => Oath in Felghana"
+        "Second => Ark Of Napishtim"
+        "Third => origin"
+        "####################"
+
+        var o = { 
+            "key1": "value1", 
+                   "key2": "value2"
+                };
+            for(var prop in o) {
+            console.log(prop,o[prop]);  
+            }
+      
+</script>
+</html>

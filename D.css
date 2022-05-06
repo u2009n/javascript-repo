@@ -1,0 +1,23 @@
+
+.conten {
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    background-color:gray;
+    flex-wrap: wrap;
+    margin:30px auto;
+    align-items:center;
+    border-radius
+}
+
+.conten div{
+    flex-basis: 33%;
+ text-align: center;
+ background-color:#fff;
+ /* margin: 2%; */
+
+}
+span{
+    font-size: 40px;
+    padding-bottom: ;
+}

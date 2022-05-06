@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="main.js"></script>
+    <script src="task01.06.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   
+    <h1 id='el'>Elzero</h1>
+
+    <script> // Task 02
+    document.getElementById('el').style.color='blue';
+    document.getElementById('el').style.fontSize='80px';
+    document.getElementById('el').style.fontWeight='bold';
+    document.getElementById('el').style.textAlign='center';
+    document.getElementById('el').style.fontFamily='Arial';
+    document.getElementById('el').style.width='400px';
+    document.getElementById('el').style.padding='70px 100px';
+    document.getElementById('el').style.margin='20px auto';
+    document.getElementById('el').style.border='1px solid rgb(0, 0, 0,.2)';
+    document.getElementById('el').style.position='relative';
+   
+    //Task 03
+
+    console.log("%cElzero %cWeb %cSchool", "color: red;font-size:40px", "color: green;font-size:40px;font-weight:bold" , "background: blue;color:white;font-size:40px");
+    
+    //Task 04
+
+    console.group("%cGroup 1","font-size:25px");
+    console.log("%cMessage one","font-size:15px");
+    console.log("%cMessage two","font-size:15px");
+    console.group('%cChild  Group',"font-size:25px");
+    console.log("%cMessage one","font-size:15px");
+    console.log("%cMessage two","font-size:15px");
+    console.group('%c Grand Child  Group',"font-size:25px");
+    console.log("%cMessage one","font-size:15px");
+    console.log("%cMessage two","font-size:15px");
+    console.groupEnd();
+    console.groupEnd();
+    console.groupEnd();
+    console.group("%cGroup 2","font-size:30px");
+    console.log("%cMessage one","font-size:15px");
+    console.log("%cMessage two","font-size:15px");
+
+    // Task 05
+
+    console.table(['Elzero','Ahmed','adel','ali','sayed','sami']);
+    var user='adel';
+    </script>
+
+    <div id="hello">hello</div>
+    
+  </body>
+</html>
